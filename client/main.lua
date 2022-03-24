@@ -143,7 +143,7 @@ Citizen.CreateThread(function()
 			local myPed = GetPlayerPed(-1)
 			local vehicle = GetVehiclePedIsIn(myPed, false)
 			if vehicle ~= 0 and GetPedInVehicleSeat(vehicle, -1) == myPed then
-				if QBCore.Functions.GetPlayerData().job.name == 'police' and QBCore.Functions.GetPlayerData().job.onduty then
+				if QBCore.Functions.GetPlayerData().job.name == 'police' or QBCore.Functions.GetPlayerData().job.name == 'ambulance' and QBCore.Functions.GetPlayerData().job.onduty then
 					return
 				end
 				local coords = GetEntityCoords(myPed)
