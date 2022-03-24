@@ -143,6 +143,9 @@ Citizen.CreateThread(function()
 			local myPed = GetPlayerPed(-1)
 			local vehicle = GetVehiclePedIsIn(myPed, false)
 			if vehicle ~= 0 and GetPedInVehicleSeat(vehicle, -1) == myPed then
+				if QBCore.Functions.GetPlayerData().job.name == 'police' and QBCore.Functions.GetPlayerData().PlayerData.job.onduty then
+					return
+				end
 				local coords = GetEntityCoords(myPed)
 				local distance = GetDistanceBetweenCoords(v.coords.x, v.coords.y, v.coords.z,coords, true)
 				local kmhSpeed = math.ceil(GetEntitySpeed(vehicle) * speedMultiplier)
