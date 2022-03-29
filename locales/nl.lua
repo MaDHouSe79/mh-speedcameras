@@ -1,24 +1,25 @@
 local Translations = {
     discord = {
-        ["title"]    = "Te hard rijden",
+        ["title"]    = "%{title}",
+        ["driver"]   = "Driver %{driver}",
         ["model"]    = "Model %{model}",
-        ["plate"]    = "Kenteken %{plate}",
-        ["speed"]    = "Snelheid %{speed} %{displaymph}",
-        ["maxspeed"] = "Snelheidslimit %{maxspeed} ",
-        ["radar"]    = "Straat %{street}",
-        ["fine"]     = "Boete €%{fine}",
-        ["vehicle"]  = "Voertuig",
+        ["plate"]    = "Plate %{plate}",
+        ["speed"]    = "Speed %{speed} %{displaymph}",
+        ["maxspeed"] = "Max Speed %{maxspeed}",
+        ["radar"]    = "Street %{street}",
+        ["fine"]     = "Fine $%{fine}",
+        ["vehicle"]  = "Vehicle",
+
     },
     notify = {
-        ["flashed"]  = "Je bent geflits om dat je te hard reed mafkees",
-        ["payfine"]  = "Je boete is betaald eikel", 
+        ["flashed"]  = "You got flashed for driving too fast you crazy boy",
+        ["payfine"]  = "Your fine has been paid you crazy boy", 
     },
     blip = {
-        title1 = "Flitsbaal",
-        title2 = "Flitspaal %{maxspeed}",
+        title1 = "Speed Camera",
+        title2 = "Speed Camera %{maxspeed}",
     }
 }
-
 Lang = Locale:new({
     phrases = Translations,
     warnOnMissing = true
