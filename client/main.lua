@@ -54,12 +54,7 @@ function HandlespeedCam(kmhSpeed, maxSpeed, Plate, vehicleModel, radarStreet)
 		fine = 1750 + (TooMuchSpeed * Config.KmhFine)
 	end
 	if TooMuchSpeed >= 25 then
-
-		local PlayerData = QBCore.Functions.GetPlayerData()
-
-		local driver = PlayerData.charinfo.firstname ..' '.. PlayerData.charinfo.lastname
-		local citizenid = PlayerData.citizenid
-		TriggerServerEvent('qb-speedcameras:PayFine', GetPlayerServerId(PlayerId()), Plate, kmhSpeed, maxSpeed, fine, vehicleModel, radarStreet, displaymph, driver, citizenid)
+		TriggerServerEvent('qb-speedcameras:PayFine', GetPlayerServerId(PlayerId()), Plate, kmhSpeed, maxSpeed, fine, vehicleModel, radarStreet, displaymph)
 	end
 end
 
@@ -79,7 +74,6 @@ local function Flits()
 		SendNUIMessage({playsong = 'true', songname= "speedcamera"})
 		QBCore.Functions.Notify(Lang:t('notify.flashed'), "error", 5000)
 	end
-	
 end
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
