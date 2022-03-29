@@ -1,6 +1,6 @@
 local Translations = {
     discord = {
-        ["title"]    = "Speedcam Radar",
+        ["title"]    = "%{title}",
         ["driver"]   = "Driver %{driver}",
         ["model"]    = "Model %{model}",
         ["plate"]    = "Plate %{plate}",
