@@ -16,9 +16,6 @@ Config.UseMPH                      = false
 Config.ShowBlips                   = true
 Config.MergBlips                   = true
 
-Config.UseWebHook                  = true
-Config.Webhook                     = "" --webhook 
-
 Config.Radars = {
 	{coords = vector4(676.44, -238.71, 48.01, 350.71), maxSpeed = 120.0, alertradarrange = 140 },
 	{coords = vector4(1621.38, 1068.75, 83.88, 346.87), maxSpeed = 120.0, alertradarrange = 140 },
