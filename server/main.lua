@@ -1,8 +1,11 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+local UseWebHook = true
+local Webhook = "" --webhook 
+
 local function sendToDiscord(title, message, color)
-	if Config.UseWebHook then
-		if Config.Webhook == "" then
+	if UseWebHook then
+		if Webhook == "" then
 			print("you have no webhook, create one on discord [https://discord.com/developers/applications] and place this in the config.lua (Config.Webhook)")
 		else
 			if message == nil or message == '' then return end
