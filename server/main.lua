@@ -6,7 +6,7 @@ local Webhook = "" --webhook
 local function sendToDiscord(title, message, color)
 	if UseWebHook then
 		if Webhook == "" then
-			print("you have no webhook, create one on discord [https://discord.com/developers/applications] and place this in the config.lua (Config.Webhook)")
+			print("you have no webhook, create one on discord [https://discord.com/developers/applications] and place this server.lua (Webhook)")
 		else
 			if message == nil or message == '' then return end
 			LogArray = {
@@ -26,7 +26,7 @@ local function sendToDiscord(title, message, color)
 					}
 				}
 			}
-			PerformHttpRequest(Config.Webhook , function(err, text, headers) end, 'POST', json.encode({username = "SpeedCam", embeds = LogArray}), { ['Content-Type'] = 'application/json' })
+			PerformHttpRequest(Webhook , function(err, text, headers) end, 'POST', json.encode({username = "SpeedCam", embeds = LogArray}), { ['Content-Type'] = 'application/json' })
 		end
 	end
 end
