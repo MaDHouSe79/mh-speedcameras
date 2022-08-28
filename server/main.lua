@@ -1,6 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
-local UseWebHook = true
+local UseWebHook = false
 local Webhook = "" --webhook 
 
 local function sendToDiscord(title, message, color)
