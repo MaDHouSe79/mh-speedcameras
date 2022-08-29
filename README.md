@@ -1,4 +1,4 @@
-## qb-speedcameras with camera prop
+## mh-speedcameras with camera prop
 
 ## 💪 Dependencies
 - ✅ [qb-core](https://github.com/qbcore-framework/qb-core)
