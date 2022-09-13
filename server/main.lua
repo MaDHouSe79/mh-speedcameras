@@ -42,7 +42,7 @@ AddEventHandler('qb-speedcameras:PayFine', function(source, plate, kmhSpeed, max
 	local driver = Player.PlayerData.charinfo.firstname ..' '.. Player.PlayerData.charinfo.lastname
 	local citizenid = Player.PlayerData.citizenid
     if Player.Functions.RemoveMoney("cash", amount, "pay-fine") then
-		TriggerClientEvent('QBCore:Notify', _source, Lang:t('notify.payfine'), "success")
+		TriggerClientEvent('QBCore:Notify', _source, Lang:t('notify.payfine',{amount = amount}), "success")
     else
 		if Player.Functions.RemoveMoney("bank", amount, "pay-fine") then
 			TriggerClientEvent('QBCore:Notify', _source, Lang:t('notify.payfine',{amount = amount}), "success")
