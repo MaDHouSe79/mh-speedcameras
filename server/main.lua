@@ -45,7 +45,7 @@ AddEventHandler('qb-speedcameras:PayFine', function(source, plate, kmhSpeed, max
 		TriggerClientEvent('QBCore:Notify', _source, Lang:t('notify.payfine'), "success")
     else
 		if Player.Functions.RemoveMoney("bank", amount, "pay-fine") then
-			TriggerClientEvent('QBCore:Notify', _source, Lang:t('notify.payfine'), "success")
+			TriggerClientEvent('QBCore:Notify', _source, Lang:t('notify.payfine',{amount = amount}), "success")
 		end
 	end
 	sendToDiscord(Lang:t('discord.title',{title=title}),Lang:t('discord.driver', {driver = driver}) ..'\n'..Lang:t('discord.model', {model = vehicleModel}) ..'\n'..Lang:t('discord.plate', {plate = plate})..'\n'..Lang:t('discord.speed', {speed = kmhSpeed, displaymph=displaymph}).. '\n'..Lang:t('discord.maxspeed', {maxspeed = maxSpeed})..'\n'..Lang:t('discord.radar', {street = radarStreet})..'\n'..Lang:t('discord.fine', {fine = amount}), color)
