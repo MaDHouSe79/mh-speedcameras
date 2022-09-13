@@ -13,7 +13,7 @@ local Translations = {
     },
     notify = {
         ["flashed"]  = "You got flashed for driving too fast you crazy boy",
-        ["payfine"]  = "Your fine has been paid you crazy boy", 
+        ["payfine"]  = "You have paid a fine of $%{amount} you crazy boy", 
     },
     blip = {
         title1 = "Speed Camera",
