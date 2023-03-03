@@ -11,6 +11,8 @@ Config.ShowRadarProps              = true
 Config.MinWaitTimeBeforeGivingFine = 0 --in seconds
 Config.MaxWaitTimeBeforeGivingFine = 0 --in seconds
 
+Config.UseFashlight                - true
+
 Config.UseMPH                      = false
 
 Config.ShowBlips                   = true
