@@ -36,8 +36,8 @@ local function LoadRadarProps()
 	TriggerEvent('qb-speedcameras:ShowRadarBlip')
 end
 
-local -- Determines if player is close enough to trigger cam
-function HandlespeedCam(kmhSpeed, maxSpeed, Plate, vehicleModel, radarStreet)
+-- Determines if player is close enough to trigger cam
+local function HandlespeedCam(kmhSpeed, maxSpeed, Plate, vehicleModel, radarStreet)
 	local fine = 0
 	local TooMuchSpeed = tonumber(kmhSpeed) - tonumber(maxSpeed)
 	if TooMuchSpeed >= 25 and TooMuchSpeed <= 50 then
@@ -65,17 +65,18 @@ local function UnloadRadarProps()
 end
 
 local function Flits()
+    if Config.UseFashlight then
 	if not hasFlits then
-		hasFlits = true
-		SetNuiFocus(false,false)
-		SendNUIMessage({type = 'openSpeedcamera'})
-		Citizen.Wait(50)
-		SendNUIMessage({type = 'closeSpeedcamera'})
-		SendNUIMessage({playsong = 'true', songname= "speedcamera"})
-		QBCore.Functions.Notify(Lang:t('notify.flashed'), "error", 5000)
+	    hasFlits = true
+	    SetNuiFocus(false,false)
+	    SendNUIMessage({type = 'openSpeedcamera'})
+	    Citizen.Wait(50)
+	    SendNUIMessage({type = 'closeSpeedcamera'})
+	    SendNUIMessage({playsong = 'true', songname= "speedcamera"})
+            QBCore.Functions.Notify(Lang:t('notify.flashed'), "error", 5000)
 	end
+    end
 end
-
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
     PlayerData = QBCore.Functions.GetPlayerData()
     UnloadRadarProps()
