@@ -27,11 +27,10 @@
   <img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
 </p>
 
-## MH-SpeedCameras with camera prop
+# MH-SpeedCameras with camera prop
 
-## 💪 Dependencies
+# 💪 Dependencies
 - ✅ [qb-core](https://github.com/qbcore-framework/qb-core)
 
-## 🙈 Youtube & Discord
-- [Youtube](https://www.youtube.com/@MaDHouSe79)
-- [Discord](https://discord.gg/cEMSeE9dgS)
+# 🙈 Youtube
+- [Youtube](https://www.youtube.com/c/MaDHouSe79)
