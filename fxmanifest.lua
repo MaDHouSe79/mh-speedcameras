@@ -8,9 +8,9 @@ version '1.0.0'
 ui_page 'html/ui.html'
 
 shared_scripts {
-    '@qb-core/shared/locale.lua',
-    'locales/en.lua', -- change en to your language
-	"config.lua",
+    	'@qb-core/shared/locale.lua',
+    	'locales/en.lua', -- change en to your language
+	'config.lua',
 }
 client_script { 
 	"client/main.lua",
@@ -18,7 +18,7 @@ client_script {
 	
 server_scripts {
 	"server/main.lua",
-	"config.lua",
+	"server/update.lua",
 }
 
 files {
