@@ -5,17 +5,17 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MH-Scripts/mh-speedcameras/issues">
-    <img src="https://img.shields.io/github/issues/MH-Scripts/ mh-speedcameras"/> 
+  <a href="https://github.com/MaDHouSe79/mh-speedcameras/issues">
+    <img src="https://img.shields.io/github/issues/MaDHouSe79/mh-speedcameras"/> 
   </a>
-  <a href="https://github.com/MH-Scripts/mh-speedcameras/network/members">
-    <img src="https://img.shields.io/github/forks/MH-Scripts/mh-speedcameras"/> 
+  <a href="https://github.com/MaDHouSe79/mh-speedcameras/network/members">
+    <img src="https://img.shields.io/github/forks/MaDHouSe79/mh-speedcameras"/> 
   </a>  
-  <a href="https://github.com/MH-Scripts/mh-speedcameras/stargazers">
-    <img src="https://img.shields.io/github/stars/MH-Scripts/mh-speedcameras?color=white"/> 
+  <a href="https://github.com/MaDHouSe79/mh-speedcameras/stargazers">
+    <img src="https://img.shields.io/github/stars/MaDHouSe79/mh-speedcameras?color=white"/> 
   </a>
-  <a href="https://github.com/MH-Scripts/mh-speedcameras/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/MH-Scripts/mh-speedcameras?color=black"/> 
+  <a href="https://github.com/MaDHouSe79/mh-speedcameras/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/MaDHouSe79/mh-speedcameras?color=black"/> 
   </a>      
 </p>
 
